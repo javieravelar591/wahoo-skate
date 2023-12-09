@@ -1,0 +1,44 @@
+doctype html 
+//- fix this, have empty paragrpah at the bottom
+head
+    title What our customers say! 
+    meta(charset="UTF-8")
+    style.
+        iframe {
+            border: none
+        }
+    script(src="/resources/js/main.js")
+    link(rel='stylesheet', type='text/css', href='resources/css/main.css')
+    link#dark-css(rel='stylesheet', type='text/css', href='resources/css/main.dark.css')
+
+    include nav.pug 
+    h1 Our Customers are always satsified! 
+    h2 Check out what they have to say! 
+    iframe(src="https://www.youtube.com/embed/cW9OABECQkU?si=mWadc5LOHTAgDf6A", title="YouTube video player", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", frameborder="0", width="560" height="315", allowfullscreen) 
+    //- double check this is proper pug
+    div(class="review-container")
+        div(class="review")
+            p(class="review-body")
+                em "Friendly and knowledgable staff! Will be coming again!"
+            p(class="reviewer-name") - Andrew Reynolds
+        div(class="review")
+            p(class="review-body")
+                em "They have the best selection of skate gear in the area!"
+            p(class="reviewer-name") - Kader
+        div(class="review")
+            p(class="review-body")
+                em "Super cool staff and they know what they're talking about. Super good selection of clothes too"
+            p(class="reviewer-name") - Gustavo Rebeiro
+        div(class="review")
+            p(class="review-body")
+                em "One of the staff members beat me in a game of skate 10/10"
+            p(class="reviewer-name") - Luan Oliveira
+        div(class="review")
+            p(class="review-body")
+                em "Definitely be coming here again"
+            p(class="reviewer-name") - Versace Plug
+        div(class="review")
+            p(class="review-body")
+                em "Awesome shop for real"
+            p(class="reviewer-name") - Alex Midler
+        

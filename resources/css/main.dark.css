@@ -1,0 +1,8 @@
+.dark-mode {
+    background-color: grey;
+    color: white;
+}
+
+.dark-nav nav {
+    background-color: black;
+}

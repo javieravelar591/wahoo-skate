@@ -1,0 +1,38 @@
+
+doctype html 
+//- include lang
+head
+    meta(charset="UTF-8")
+    title Contact Log 
+    script(src="/resources/js/table.js")
+    script(src="/resources/js/main.js")
+    link(rel='stylesheet', type='text/css', href='/resources/css/main.css')
+    link#dark-css(rel='stylesheet', type='text/css', href='/resources/css/main.dark.css')
+body
+    include nav.pug 
+
+    div#theform(style='margin-top:10px')
+        input(type='text' id='sale-message')
+        input(type='submit' value='Set Sale' id='set-sale')
+        input(type='submit' value='End Sale' id='delete-sale')
+    h1 Our Contacts and Appointments 
+    table#contact-list 
+        tr
+            th Name 
+            th Email
+            th Appointment Date
+            th Time Until Appointment
+            th Experience Level
+            th ID
+            th Delete 
+        each contact in contacts 
+            tr
+                td= contact.name
+                td
+                    a(href=`mailto:${contact.email}`)= contact.email
+                td.date= contact['date-select']
+                td.time-until
+                td= contact['xp-select']
+                td.next-id= contact.id
+                td
+                    button(type="button" id="delete-button") DELETE ME

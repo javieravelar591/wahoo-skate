@@ -1,0 +1,145 @@
+/* All pages */
+body {
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    color:burlywood;
+    font-size: 50px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+    font-family: 'fantasy';
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+nav {
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: brown;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 17%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav li:hover {
+    background-color: darkred;
+}
+
+li a {
+    color: wheat;
+}
+
+/*  */
+div {
+    margin: auto;
+    margin-top: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: darkred;
+    background-color: brown;
+    color: beige;
+    width: fit-content;
+    padding: 10px;
+}
+
+strong {
+    color: lightblue;
+}
+
+div em {
+    color: gold;
+}
+
+/* testimony page */
+iframe {
+    display: block;
+    border: 10px;
+    border-style: inset;
+    border-color: rgb(214, 214, 188);
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-container {
+    width: 100%;
+    column-count: 2;
+    border-radius: 0%;
+}
+
+div.review {
+    width: 70%;
+    background-color: antiquewhite;
+    color: brown;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 25px;
+    border-color: brown;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.review-body em {
+    color: darkred;
+}
+
+.reviewer-name {
+    text-align: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* schedule appointment */
+table, th, tr, td {
+    border-style: double;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(even){
+    background-color: tan;
+}
+
+.form-container {
+    background-color: antiquewhite;
+    color: brown;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 25px;
+    border-color: brown;
+}
+
+input {
+    margin-bottom: 5px;
+}

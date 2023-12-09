@@ -1,0 +1,46 @@
+doctype html 
+head 
+    title Private Lessons! 
+    meta(charset="UTF-8")
+    script(src='/resources/js/main.js')
+    script(src='resources/js/contact.js', defer)
+    //- script(src='/resources/js/table.js')
+    link(rel='stylesheet', type='text/css', href='resources/css/main.css')
+    link#dark-css(rel='stylesheet', type='text/css', href='resources/css/main.dark.css')
+
+body 
+    include nav.pug 
+    h1 Schedule Private Skate Lessons 
+    div(class="form-container")
+        form(action='/contact', method='post')
+            label(for='name-input') Full name: 
+            input#name-input(type='text', name='name', required)
+            br
+
+            label(for='email-input') Email: 
+            input#email-input(type='email', name='email', required)
+            br
+
+            label(for='date-selection') Preferred Lesson Day: 
+            input#date-selection(type='date', name='date-select', min='2023-09-27', required)
+            br
+
+            label(for='xp-level') Please select your experience level: 
+            select(name='xp-select' id='xp-level')
+                option(value='Brand New') Brand New 
+                option(value='Intermediate') Intermediate
+                option(value='Pretty Good') Pretty good
+                option(value='Steezy') Steezy
+            br
+
+            label(for='waiver') Please check here if you agree to our waiver: 
+            input#waiver(type='checkbox', required)
+            br
+
+            label(for='confirmation')
+                | Select 
+                strong confirm 
+                | to complete your appointment: 
+            input#confirmation(type='submit', value='Confirm', name='confirmation')
+
+            #price-calculation
