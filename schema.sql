@@ -3,7 +3,7 @@ CREATE TABLE contact (
     email VARCHAR(256) NOT NULL,
     `date-select` DATE NOT NULL,
     `xp-select` VARCHAR(256) NOT NULL,
-    id INT AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (id)
 );
 
